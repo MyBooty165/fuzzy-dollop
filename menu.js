@@ -21,10 +21,12 @@ $(document).ready(function () {
         } else {
             typedText.addClass("finished");
             subText.removeClass("hidden");
-            leftButton.removeClass("hidden");
-            rightButton.removeClass("hidden");
-            leftButton.addClass("zoom-out");
-            rightButton.addClass("zoom-out");
+            setTimeout(function () {
+                leftButton.removeClass("hidden");
+                rightButton.removeClass("hidden");
+                leftButton.addClass("zoom-out");
+                rightButton.addClass("zoom-out");
+            }, 500);
         }
     }
 });
