@@ -58,28 +58,33 @@ body {
 
 .left-btn,
 .right-btn {
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  color: #f2f2f2;
-  background-color: #737373;
-  gap: 7px;
-  transform: translateY(-150px);
-  text-align: center;
-  align-items: center;
-  position: relative;
-  width: 50px;
-  height: 50px;
-  font-size: 30px;
-  transition: background-color 0.2s ease;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #f2f2f2;
+    background-color: #737373;
+    gap: 7px;
+    transform: translateY(-150px);
+    text-align: center;
+    align-items: center;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    transition: background-color 0.2s ease, transform 0.5s ease;
 }
 
 .left-btn:hover {
-  background-color: white;
-  color: black
+    background-color: white;
+    color: black;
 }
 
 .right-btn:hover {
-  background-color: white;
-  color: black
+    background-color: white;
+    color: black;
+}
+
+.left-btn.zoom-out,
+.right-btn.zoom-out {
+    transform: translateY(-150px) scale(0);
 }
