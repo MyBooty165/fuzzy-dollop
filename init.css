@@ -58,6 +58,7 @@ body {
 
 .left-btn,
 .right-btn {
+    display: none;
     cursor: pointer;
     border: none;
     border-radius: 5px;
@@ -86,5 +87,6 @@ body {
 
 .left-btn.zoom-out,
 .right-btn.zoom-out {
-    transform: translateY(-150px) scale(0);
+    display: inline-block;
+    transform: translateY(-150px) scale(1);
 }
