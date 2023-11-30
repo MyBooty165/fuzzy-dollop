@@ -24,8 +24,10 @@ $(document).ready(function () {
             setTimeout(function () {
                 leftButton.removeClass("hidden");
                 rightButton.removeClass("hidden");
-                leftButton.addClass("zoom-out");
-                rightButton.addClass("zoom-out");
+                setTimeout(function () {
+                    leftButton.addClass("zoom-out");
+                    rightButton.addClass("zoom-out");
+                }, 50);
             }, 500);
         }
     }
