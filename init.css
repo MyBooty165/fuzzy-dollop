@@ -88,5 +88,5 @@ body {
 .left-btn.zoom-out,
 .right-btn.zoom-out {
     display: inline-block;
-    transform: translateY(-150px) scale(1);
+    transform: translateY(-150px) scale(0);
 }
