@@ -3,6 +3,8 @@ $(document).ready(function () {
     const terminal = $(".terminal");
     const typedText = $("#typed-text");
     const subText = $("#sub-text");
+    const leftButton = $(".left-btn");
+    const rightButton = $(".right-btn");
 
     setTimeout(function () {
         terminal.find(".cursor").remove();
@@ -19,6 +21,10 @@ $(document).ready(function () {
         } else {
             typedText.addClass("finished");
             subText.removeClass("hidden");
+            leftButton.removeClass("hidden");
+            rightButton.removeClass("hidden");
+            leftButton.addClass("zoom-out");
+            rightButton.addClass("zoom-out");
         }
     }
 });
