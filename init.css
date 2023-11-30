@@ -71,10 +71,15 @@ body {
   width: 100px;
   height: 100px;
   font-size: 60px;
-  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease;
 }
 
-.left-btn,
+.left-btn:hover {
+  background-color: white;
+  color: black
+}
+
 .right-btn:hover {
-  transform: scale(1.05);
+  background-color: white;
+  color: black
 }
