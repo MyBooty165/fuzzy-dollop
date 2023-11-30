@@ -1,0 +1,57 @@
+body {
+    background-color: #000;
+    color: #00ff00; 
+    font-family: 'Courier New', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.terminal-container {
+    text-align: center;
+}
+
+.terminal {
+    display: inline-block;
+    font-size: 2em;
+    white-space: nowrap;
+}
+
+.cursor {
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+#typed-text {
+  display: inline-block;
+  font-size: 2em;
+  transition: transform 0.5s ease; 
+}
+
+#typed-text.finished {
+  transform: translateY(-150px);
+}
+
+#sub-text {
+    font-size: 1.5em;
+    transform: translateY(-150px);
+    opacity: 0;
+    animation: fadeIn 1s forwards 0.5s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.hidden {
+    display: none;
+}
