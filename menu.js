@@ -26,7 +26,7 @@ $(document).ready(function () {
                 rightButton.removeClass("hidden");
                 leftButton.addClass("zoom-out");
                 rightButton.addClass("zoom-out");
-            }, 700);
+            }, 1000);
         }
     }
 });
