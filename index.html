@@ -6,7 +6,22 @@
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <button class="init" onclick="window.location.href='init.html';"><i class="fas fa-play"></i></button>
-  <script src="init.js"></script>
+  <div id="loadingScreen">
+    <img id="loadingGif" src="/media/loading.gif" alt="Loading...">
+  </div>
+  <div id="mainContent">
+    <button class="init" onclick="window.location.href='init.html';"><i class="fas fa-play"></i></button>
+    </div>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      const loadingScreen = document.getElementById('loadingScreen');
+      const mainContent = document.getElementById('mainContent');
+
+      loadingScreen.style.display = 'none';
+      mainContent.style.display = 'block';
+    }, 2000);
+  </script>
 </body>
 </html>
